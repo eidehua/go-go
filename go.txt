@@ -6,6 +6,7 @@ import "fmt"
 // successive Fibonacci numbers.
 func fib() func() int {
 	a, b := 0, 1
+	//outer function only initialized the variables
 	return func() int {
 		a, b = b, a+b
 		return a
